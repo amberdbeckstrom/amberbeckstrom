@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<html ng-app="website">
+		<head>
+		
+			<meta name="viewport" content="width=device-width">
+			<title>Amber Danielle</title>
+			<link rel="stylesheet" type="text/css" href="normalize.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+
+		</head>
+			<body ng-controller="MainCtrl">
+			<header>
+			</header>
+			<div class="mainwrap">
+
+				<div class="homecover">
+						<img class="logo2" src="img/adlogored.png"/>
+						<ul class='nav'>
+								<a href="index.html"><li>ABOUT</li></a>
+								<a href="design.html"><li>DESIGN</li></a>
+								<a href="photography.html"><li>PHOTOGRAPHY</li></a>
+								<a href="img/amberdmoss_resume.pdf"><li>RESUME</li></a>
+								<a href="https://www.linkedin.com/pub/amber-moss/83/97/26b" target="_blank"><li>LINKEDIN</li></a>
+						</ul>
+
+				</div>
+
+				<div class='wrapperproject'>
+
+						<!-- <div class="space">
+						</div> -->
+					
+						<div class="leftside">
+							<img class="propic" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)"ng-src="{{slide.image}}"/>
+							
+							<img class="propic" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image2}}"/>
+							
+							<img class="propic" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image3}}"/>
+
+							<img class="propic" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image4}}"/>
+
+							<img class="propic" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image5}}"/>
+
+							<img class="propic" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image6}}"/>
+
+
+						<a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+   						<a class="arrow next" href="#" ng-click="prevSlide()"></a>
+						</div>
+
+					<div class="iconwrapper">
+						
+						<div class="project" ng-click="currentIndex= 0">
+							<img class="coverpic"src="img/jamescover.jpg" alt="James Portrait Shoot"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 4">
+							<img class="coverpic"src="img/fishcover.jpg" alt="Fish Photoshoot"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 3">
+							<img class="coverpic"src="img/janellcover.jpg" alt="Phootshoot Janell"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 5">
+							<img class="coverpic"src="img/tatecover.jpg" alt="Tate Graduation Images"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 7">
+							<img class="coverpic"src="img/colognecover.jpg" alt="Cologne Advertisement"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 6">
+							<img class="coverpic"src="img/chickencover.jpg" alt="Chicken Photoshoot"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 2">
+							<img class="coverpic" ng-click="currentIndex= 1"  src="img/indycover.jpg" alt="Skateboard Shoot"/>
+						</div>
+
+						<div class="project" ng-click="currentIndex= 1">
+							<img class="coverpic"src="img/lexicover.jpg" alt="Portrait Shoot Lexi"/>
+						</div>
+
+					</div>
+						<div class="bottomside2" >
+							<h2 ng-repeat="slide in slides" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                 			ng-hide="!isCurrentSlideIndex($index)">{{slide.title}}</h2>
+
+							<h4 ng-repeat="slide in slides" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                 			ng-hide="!isCurrentSlideIndex($index)">{{slide.date}}</h4>
+
+							<h5 ng-repeat="slide in slides" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                 			ng-hide="!isCurrentSlideIndex($index)">{{slide.description}}</h5>
+
+                 			<h4 class="tools" ng-repeat="slide in slides" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                 			ng-hide="!isCurrentSlideIndex($index)">{{slide.tools}}</h4>
+							
+						</div>
+
+					</div>
+					
+			</div>
+					
+					<div class='wrapperproject'>
+						
+						
+					</div>
+				</div>	
+				<footer>
+				</footer>		
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+<script src="/bower_components/angular-touch/angular-touch.js"></script>
+<script src="js/photography.js"></script>
+<script src="js/jq.js"></script>
+			<body>
+
+	</html>
