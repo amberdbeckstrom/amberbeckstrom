@@ -1,71 +1,153 @@
 /**{
 		outline:1px solid red;
-	}*/
+	}
+*/
+/*********************************************************************************/
+/* Mobile*/
+/*********************************************************************************/
+
+
+
+@media (min-width: 320px) and (orientation: portrait) {
 
 html body{
 	width: 100%;
-	margin:0;
-	padding:0;
 	height:100%;
 }
 
-body {
+
+.homecover {
+	width: 100%;
+	position: relative;
+	clear:both;
 	margin: 0 auto;
-	height: 100%;
-	background-color: #fff;
+	height: 300px;
 }
 
-/*.space {
-	height: 42px;
-	width: 1280px;
-	background-color: #fff;
-}*/
+.mainwrap {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 2100px;
+}
 
+.mainwrap2 {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 1600px;
+}
+
+.mainlogo {
+	width: 90%;
+	margin: 20% 5% 0% 5%;
+}
+
+.nav {
+	display: none;
+}
+
+.leftside {
+	width: 100%;
+	height: 1000px;
+	margin: 0% 5% 0% 5%;
+}
+
+.title{
+	float:left;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+	height: 30px;
+	z-index: 102;
+	border-bottom: solid 2px #B5E1FF;
+}
+
+
+.bottomsideabout{
+	float:left;
+	width: 90%;
+	margin: 5% 5% 0% 5%;
+	height: 320px;
+	z-index: 102;
+}
+
+.bottomside2{
+	position: relative;
+	margin: -1170px 0px 0px 20px;
+	width: 100%;
+	height: 170px;
+	border-bottom: none;
+}
+
+.leftabout {
+	width: 100%;
+	
+}
+
+.propic {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propic2 {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propiclrc2 {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propiclrc {
+	display: none;
+	/*width: 90%;
+	margin: 10% 5% 0% 0%;*/
+}
+
+.btn{
+	width: 168px;
+	height: 40px;
+	margin: 0% 0% 0% 20%;
+	float: left;
+	border: solid 2px #DCDADA;
+}
+
+
+.addcartprotein {
+	font-size: 1em;
+	width: 168px;
+	height: 40px;
+	padding: 10px;
+	/*text-transform: uppercase;*/
+	border: solid 1px #837f31;
+	color: #837f31;
+	/*text-indent: none;*/
+}
+
+.addcartprotein a {
+	text-decoration: none;
+}
 
 a {
-   color: #34495e;
+   color: #ffffff;
 }
 
 a:hover {
   color: #e74c3c;
 }
 
-/*a:active {
-    color: yellow;
-    text-decoration: underline;
-    text-decoration-color: red;
-}*/
-
-
-
-header {
-	position: fixed;
-	height: 15px;
-	width: 100%;
-	background-color: #4c4c4c;
-	z-index: 99;
-}
-
-.line {
-	width: 40em;
-	height: 17em;
-	border-bottom: solid 1px #000;
-	position: absolute;
-	top: 80px;
-	left: 320px;
-	margin: 0px;
-	z-index: 100;
-}
-
 h1 {
 	font-size: 1.7em;
-	color: #4c4c4c;
+	color: #B5E1FF;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: 400;
 	/*font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;*/
 	position: relative;
-	margin: 20px 0px 0px 16px;
+	margin: 0px 0px 0px 0px;
 	z-index: 100;
 }
 
@@ -97,8 +179,6 @@ h1 {
 
 }
 
-
-
 h2 {
 	font-size: 1.7em;
 	color: #4c4c4c;
@@ -112,24 +192,16 @@ h2 {
 	width: 210px;
 }
 
-h3 {
-	float: left;
-	padding: 0 0 0 0px;
-	font-size: 1.3em;
-	color: #636363;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 700;
-	margin: 20px 0 0 16px;
-}
+
 
 h4 {
-	float: right;
-	padding: 0 1px 0 0px;
-	font-size: .8em;
-	color: #636363;
+	float: center;
+	text-align: center;
+	font-size: 1em;
+	color: #DCDADA;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: 400;
-	margin: -23px 20px 0 0;
+	margin: 12px 0px 0px 0px;
 }
 
 h4.tools {
@@ -154,303 +226,12 @@ h6 {
 	font-size: .90em;
 	line-height: 1.6em;
 	padding: 0 0px 0 0px;
-	height: 100px;
-	/*clear:both;*/
-	float: left;
-	margin: 6px 20px 0px 16px;
-}
-
-.second {
-	font-size: 1em;
-	color: #fff;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 400;
-	/*font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;*/
-	position: absolute;
-	top: 13px;
-	left: 190px;
-	margin: 0px;
-	z-index: 100;
-}
-
-.logo {
- 	position: absolute;
- 	margin-top: 3px;
- 	margin-left: 140px;
- 	width: 30px;
- 	height: 30px;
-}
-
-.logo2 {
-	margin:0;
- 	position: absolute;
- 	top: 43px;
- 	left: 143px;
-	width: 60px;
-	height: 60px;
-}
-
-.logo {
- 	position: absolute;
- 	top: 5px;
- 	left: 10px;
-}
-
-
-.coverpic {
-	width:100%;
-	z-index: 99;
-}
-
-.propic {
-	width: 600px;
-	overflow: visible;
-}
-
-.mainwrap {
-	margin: 0 auto;
-	width: 1280px;
-	position: relative;
-	clear:both;
-	height: 40%;
-}
-
-
-.iconwrapper{
-	height: 140px;
-	width: 320px;
-	float:left;
-	/*margin-top: 15px;*/
-	margin-left: 38px;
-	z-index: 102;
-}
-
-
-/*.wrapper {
-	float: left;
-	width: 400px;
-	height: 200px;
-	margin-left: 50px;
-
-}
-*/
-
-
-.wrapperproject {
-	position: relative;
-	width: 1280px;
-	height: 100%;
-	top: 0px;
-}
-
-.homecover {
-	height: 130px;
-	width: 1280px;
-	float:left;
-	
-}
-
-.project {
-	height: 60px;
-	width: 80px;
-	float: left;
-	overflow: hidden;
-}
-
-.leftside {
-	width: 600px;
-	height: 1000px;
-	margin-left: 150px;
-	margin-top: 1px;
-	float: left;
-	z-index: 100;
-	overflow: visible;
-}
-
-.leftabout {
-	width: 600px;
-	height: 500px;
-	margin-left: 150px;
-	margin-top: 1px;
-	float: left;
-	z-index: 100;
-	overflow: visible;
-}
-
-.bottomside2{
-	float:left;
-	margin-top: 1px;
-	margin-left: 38px;
-	width: 320px;
-	height: 190px;
-	z-index: 102;
-	right: 0px;
-	border-top: double #e74c3c;
-	border-bottom: double #e74c3c;
-	clear: right;
-}
-
-.bottomsideabout{
-	float:left;
-	margin-top: 1px;
-	margin-left: 38px;
-	width: 330px;
 	height: 300px;
-	z-index: 102;
-	right: 0px;
-	border-top: double #e74c3c;
-	clear: right;
-}
-
-.contact{
-	float:left;
-	width: 330px;
-	height: 300px;
-	margin-top: 160px;
-	z-index: 102;
-	right: 0px;
-	/*border-top: double #e74c3c;*/
-	clear: right;
-}
-
-.pcontact {
-	font-size: 1em;
-	color: rgba(0, 0, 0, 0.40);
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 700;
-	/*font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;*/
-	position: relative;
-	margin: 0px 0px 0px 16px;
-	/*top: 400px;*/
-
-	/*margin: 5px 0px 0px 0px;*/
-	z-index: 100;
-
-}
-
-.nav {
-	position: absolute;
-	float:left;
-	top: 46px;
-	left: 200px;
-	list-style-type: none;
- 	width:430px;
- 	height: 30px;
- 	padding: 0px;
-}
-
-.nav2 {
-	margin:0px;
-	position: absolute;
-	top: 12px;
-	right: 123px;
-	list-style-type: none;
- 	width:130px;
- 	height: 30px;
-}
-
-
-
-li {
+	width: 80%;
 	float: left;
-	margin-left: 20px;
-	font-size: 1.1em;
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 400;
-
+	margin: 6px 0px 0px 10%;
 }
 
-.copyright {
-	margin-left: 7px;
- 	position: fixed;
-	bottom: 0px;
-	color: #;
-	font-size: .5em;
-	width: 100px;
-
-}
-
-
-
-.slider {
-    max-width: 320px;
-    height: 500px;
-    position: relative;
-    z-index: 1;
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 320px;
-    z-index: 1;
-}
-
-.arrow {
-    position: fixed;
-    z-index: 1002;
-    display: block;
-    top: 50%;
-    margin-top: -35px;
-    width: 36px;
-    height: 71px;
-    outline: none;
-    cursor: pointer;
-    background: url(img/blank.gif) no-repeat;
-    z-index: 105;
-}
-
-.arrow.prev {
-    opacity: 0.8;
-    left: 20px;
-    background-image: url(img/paddle_prev_999.png);
-    transition: 0.2s linear all;
-}
-
-.arrow.next {
-    opacity: 0.8;
-    right: 20px;
-    background-image: url(img/paddle_next_999.png);
-    transition: 0.2s linear all;
-}
-
-.arrow.prev:hover {
-    opacity: 1;
-    background-image: url(img/paddle_prev_fff.png);
-}
-
-.arrow.next:hover {
-    opacity: 1;
-    background-image: url(img/paddle_next_fff.png);
-}
-
-/*footer {
-	height: 40px;
-	background-color: #4c4c4c;
-	z-index: 99;
-}
-*/
-
-
-/*********************************************************************************/
-/* Mobile*/
-/*********************************************************************************/
-
-
-
-@media (max-width: 540px) and (orientation: portrait) {
-
-html body{
-	width: 540px;
-	height:100%;
-}
-
-body {
-	width: 540px;
-}
 
 .arrow {
    display: none;
@@ -461,17 +242,8 @@ body {
 	width: 540px;
 }
 
-.mainwrap {
-	width: 540px;
-}
-
 .wrapper{
 	width: 540px;
-}
-
-.homecover {
-	width: 540px;
-	height: 200px;
 }
 
 .hmimage {
@@ -479,40 +251,11 @@ body {
 	height: 200px;
 }
 
-header {
-	position: absolute;
-	height: 15px;
-	width: 540px;
-}
-
-h1 {
-	font-size: 2.3em;
-	top: 0px;
-	left: 53px;
-}
-
-h2 {
-	font-size: 1.7em;
-	top: 0px;
-	left: 0px;
-}
-
-.logo2 {
-	top: 45px;
- 	left: 255px;
-	width: 40px;
-	height: 40px;
-}
-
-.nav {
-	position: absolute;
-	float:left;
-	top: 87px;
-	left: 58px;
-	list-style-type: none;
- 	width:430px;
- 	height: 30px;
- 	padding: 0px;
+.hamburger {
+	margin: 5% 0px 0px 5%;
+	float: left;
+	width: 30px;
+	height: 30px;
 }
 
 .second {
@@ -521,43 +264,6 @@ h2 {
 	left: 235px;
 }
 
-.wrapperproject {
-	width: 540px;
-}
-
-.leftside {
-	width: 540px;
-	height: 1000px;
-	margin-top: 235px;
-	margin-left: 0px;
-
-}
-
-.propic {
-	width: 540px;
-}
-
-.bottomside2{
-	position: relative;
-	margin: -1170px 0px 0px 25px;
-	width: 490px;
-	height: 170px;
-	border-bottom: none;
-}
-
-.leftabout {
-	width: 540px;
-	margin-left: 0px;
-	margin-top: -43px;
-	
-}
-
-.bottomsideabout{
-
-	margin-top: -70px;
-	width: 462px;
-	height: 400px;
-}
 
 h4.tools {
 	margin: 10px 0px 0px 16px;
@@ -569,15 +275,6 @@ h5 {
 	margin: 8px 20px 0px 16px;
 }
 
-.iconwrapper{
-	position: absolute;
-	height: 102px;
-	width: 284px;
-	float:left;
-	top:140px;
-	left: 89px;
-	z-index: 102;
-}
 
 .project {
 	height: 50px;
@@ -585,160 +282,341 @@ h5 {
 	float: left;
 }
 
+footer{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	background-color: #414141;
+	z-index: 99;
 
 }
-
 
 /*********************************************************************************/
-/* Mobile*/
+/* Mobile2*/
 /*********************************************************************************/
 
 
+@media (min-width: 480px) and (orientation: portrait) {
 
-@media (max-width: 320px) and (orientation: portrait) {
-
-html body{
-	width: 420px;
-	height:100%;
-}
-
-body {
-	width: 420px;
-}
-
-.arrow {
-   display: none;
-}
-
-/*.space {
-	height: 42px;
-	width: 320px;
-}
-*/
-.mainwrap {
-	width: 420px;
-}
-
-.wrapper{
-	width: 420px;
-}
 
 .homecover {
-	width: 420px;
-	height: 200px;
-}
-
-/*.hmimage {
-	width: 320px;
-	height: 200px;
-}*/
-
-header {
-	position: absolute;
-	height: 15px;
-	width: 420px;
-}
-
-h1 {
-	font-size: 2.3em;
-	top: 0px;
-	left: 0px;
-}
-
-h2 {
-	font-size: 1.7em;
-	top: 0px;
-	left: 0px;
-}
-
-.logo2 {
-	top: 35px;
- 	left: 185px;
-	width: 60px;
-	height: 60px;
-}
-
-.nav {
-	position: absolute;
-	float:left;
-	top: 98px;
-	left: 0px;
-	list-style-type: none;
- 	width:420px;
- 	height: 30px;
- 	padding: 0px;
-}
-
-/*.second {
-	font-size: 1em;
-	top: 13px;
-	left: 235px;
-}*/
-
-.wrapperproject {
-	width: 420px;
-}
-
-.leftside {
-	width: 420px;
-	height: 1000px;
-	margin-top: 265px;
-	margin-left: 0px;
-
-}
-
-.propic {
-	width: 420px;
-}
-
-.bottomside2{
+	width: 100%;
 	position: relative;
-	margin: -1170px 0px 0px 20px;
-	width: 380px;
-	height: 170px;
-	border-bottom: none;
+	clear:both;
+	margin: 0 auto;
+	height: 400px;
 }
 
-.leftabout {
-	width: 420px;
-	margin-left: 0px;
-	margin-top: -43px;
-	
+.mainwrap {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 2950px;
+}
+
+.mainwrap2 {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 2100px;
+}
+
+.mainlogo {
+	width: 90%;
+	margin: 13% 5% 0% 5%;
 }
 
 .bottomsideabout{
-	margin-left: 30px;
-	margin-top: -175px;
-	width: 360px;
-	height: 452px;
-}
-
-h4.tools {
-	margin: 10px 0px 0px 16px;
-}
-
-h5 {
-	font-size: .95em;
-	height: 60px;
-	margin: 8px 20px 0px 16px;
-}
-
-.iconwrapper{
-	position: absolute;
-	height: 102px;
-	width: 320px;
 	float:left;
-	top:150px;
-	left: 15px;
+	width: 90%;
+	margin: 5% 5% 0% 5%;
+	height: 260px;
 	z-index: 102;
-	margin-bottom: 20px;
 }
 
-.project {
-	height: 60px;
-	width: 80px;
-	float: left;
+.propic {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
 }
+
+.propic2 {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propiclrc2 {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propiclrc {
+	display: none;
+	/*width: 90%;
+	margin: 10% 5% 0% 0%;*/
+}
+
+.btn{
+	width: 168px;
+	height: 40px;
+	margin: 0% 0% 0% 31%;
+	float: left;
+	border: solid 2px #DCDADA;
+}
+
+
+/*********************************************************************************/
+/* Mobile3*/
+/*********************************************************************************/
+
+
+@media (min-width: 640px) and (orientation: portrait) {
+
+.homecover {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 400px;
+}
+
+.mainwrap {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 3650px;
+}
+
+.mainwrap2 {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 2600px;
+}
+
+.mainlogo {
+	width: 65%;
+	margin: 13% 5% 0% 17%;
+}
+
+.bottomsideabout{
+	float:left;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+	height: 190px;
+	z-index: 102;
+}
+
+.propic {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propic2 {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propiclrc2 {
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+
+.propiclrc {
+	display: none;
+	/*width: 90%;
+	margin: 10% 5% 0% 0%;*/
+}
+
+.btn{
+	width: 168px;
+	height: 40px;
+	margin: 0% 0% 0% 36%;
+	float: left;
+	border: solid 2px #DCDADA;
+}
+
+h6 {
+	height: 170px;
+	width: 80%;
+	float: left;
+	margin: 6px 0px 0px 10%;
+}
+
+/*********************************************************************************/
+/*Tablet*/
+/*********************************************************************************/
+
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+.homecover {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 450px;
+}
+
+.mainwrap {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 800px;
+}
+
+.mainwrap2 {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 800px;
+}
+
+.mainlogo {
+	width: 55%;
+	margin: 13% 0% 0% 22%;
+}
+
+.bottomsideabout{
+	float:left;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+	height: 150px;
+	z-index: 102;
+}
+
+.propic {
+	width: 30%;
+	margin: 0% 0% 0% 5%;
+}
+
+.propic2 {
+	width: 30%;
+	margin: 0% 0% 0% 0%;
+}
+
+.propiclrc2 {
+	display: none;
+}
+
+.propiclrc {
+	display: block;
+	width: 90%;
+	margin: 15% 5% 0% 0%;
+}
+
+.btn{
+	width: 168px;
+	height: 40px;
+	margin: 0% 0% 0% 39%;
+	float: left;
+	border: solid 2px #DCDADA;
+}
+
+h6 {
+	height: 140px;
+	width: 100%;
+	float: left;
+	margin: 6px 0px 0px 0%;
+}
+
+/*********************************************************************************/
+/*Desktop*/
+/*********************************************************************************/
+
+
+@media (min-width: 1024px) and (orientation: portrait) {
+
+.homecover {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 450px;
+}
+
+.mainwrap {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 800px;
+}
+
+.mainwrap2 {
+	width: 100%;
+	position: relative;
+	clear:both;
+	margin: 0 auto;
+	height: 800px;
+}
+
+.mainlogo {
+	width: 55%;
+	margin: 13% 0% 0% 22%;
+}
+
+.bottomsideabout{
+	float:left;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+	height: 150px;
+	z-index: 102;
+}
+
+.propic {
+	width: 30%;
+	margin: 0% 0% 0% 5%;
+}
+
+.propic2 {
+	width: 30%;
+	margin: 0% 0% 0% 0%;
+}
+
+.propiclrc2 {
+	display: none;
+}
+
+.propiclrc {
+	display: block;
+	width: 90%;
+	margin: 15% 5% 0% 0%;
+}
+
+.btn{
+	width: 168px;
+	height: 40px;
+	margin: 0% 0% 0% 39%;
+	float: left;
+	border: solid 2px #DCDADA;
+}
+
+h6 {
+	height: 140px;
+	width: 100%;
+	float: left;
+	margin: 6px 0px 0px 0%;
+}
+
+nav{
+	display: block;
+}
+
+header{
+	display: block;
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	color: #414141;
+	z-index: 99;
+}
+
 
 }
 
